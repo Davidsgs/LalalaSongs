@@ -26,16 +26,10 @@ const SearchSongView = () => {
                 }
             }
             axiosData();
+        }else{
+            setLetra(null);
         }
     }, [autor,cancion])
-
-    const handleInputLyrics = (e) => {
-        setCancion(e.target.value);
-    }
-    
-    const handleInputAuthor = (e) => {
-        setAutor(e.target.value);
-    }
 
     const debouncedHandleAuthor = useMemo(
         (e) => debounce((e) => {
@@ -65,7 +59,7 @@ const SearchSongView = () => {
             <Form.Control onChange={debouncedHandleAuthor} className="formPlaceholder" style={{width : "30vw", marginBottom : "1rem"}} size="lg" type="text" placeholder="Autor"/>
             <Form.Control onChange={debouncedHandleLyrics} className="formPlaceholder" style={{width : "30vw", marginBottom : "1rem"}} size="lg" type="text" placeholder="Nombre de la Canción"/>
             {loading && <Spinner animation="border" variant="dark" />}
-            {letra && <p style={{width : "30vw", marginTop : "1rem", border: "1px solid #ced4da", overflowY: "scroll", fontSize:"0.7em"}}>{letra}</p>}
+            {letra && <p style={{backgroundColor: "#C0FEFC", width : "30vw", marginTop : "1rem", border: "1px solid #ced4da", overflowY: "scroll", fontSize:"0.7em"}}>{letra}</p>}
         </div>
     )
 }

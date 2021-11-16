@@ -17,15 +17,22 @@ const Header = () => {
   const irABuscarCancion = () => {
     history.push("/buscarCancion");
   }
+
+  const btnStyle = {
+    textDecoration: "none",
+    color: "white",
+    fontWeight: "bolder"
+  }
+
   return (
     <>
-      <Navbar style={{backgroundColor : "rgb(212, 236, 221)", color:"black !important"}} variant="light">
+      <Navbar style={{backgroundColor : "rgb(17, 32, 49)"}} variant="light">
         <Container>
-          <Nav className="m-auto">
+          <Nav style={btnStyle} className="m-auto">
 
-            <Button variant="link" onClick={irAAcercaDe}>Acerca De</Button>
-            <Button variant="link" onClick={irAlInicio}>Inicio</Button>
-            <Button variant="link" onClick={irABuscarCancion}>Buscar Cancion</Button>
+            <Button variant="link" style={btnStyle} onClick={irAAcercaDe}>Acerca De</Button>
+            <Button variant="link" style={btnStyle} onClick={irAlInicio}>Inicio</Button>
+            <Button variant="link" style={btnStyle} onClick={irABuscarCancion}>Buscar Cancion</Button>
 
           </Nav>
         </Container>
