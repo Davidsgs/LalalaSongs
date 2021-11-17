@@ -23,9 +23,12 @@ Luego debería abrirse el proyecto en la ruta: [http://localhost:3000](http://lo
 
 ## Construido con 🛠️
 
+* [javascript](https://www.javascript.com/) - Lenguaje principal.
 * [React](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado.
 * [ReactRouterDom](https://maven.apache.org/) - Para manejar las views del usuario.
 * [Axios](https://axios-http.com/docs/intro) - Usado para comunicarse con la API.
+* [React Boostrap](https://react-bootstrap.github.io/) - Para dar algunos de los estilos.
+* [CSS](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Para dar estilos propios.
 
 ## Autor ✒️
 
