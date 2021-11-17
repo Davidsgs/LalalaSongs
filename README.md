@@ -32,4 +32,4 @@ Luego debería abrirse el proyecto en la ruta: [http://localhost:3000](http://lo
 
 ## Autor ✒️
 
-* **David García** - *Creador de la AppWeb* - [villanuevand](https://github.com/Davidsgs)
+* **David García** - *Creador de la AppWeb* - [Davidsgs](https://github.com/Davidsgs)
